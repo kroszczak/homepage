@@ -11,9 +11,9 @@ body {
     width: 60vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 5fr 5fr;
+    grid-template-rows: 1fr 5fr;
     grid-gap: 20px;
-    grid-template-areas: 'google google google' 'msg gmail weather' 'msg gmail stock';
+    grid-template-areas: 'google google google' 'activity weather insult';
 }
 
 #wrapper{
@@ -25,22 +25,27 @@ body {
     }
 }
 
-#gmail{
-    grid-area: gmail;
-}
-
-#msg{
-    grid-area: msg;
-}
-
-#weather{
-    grid-area: weather;
-}
-
 #google{
     grid-area: google;
 }
 
-#stock{
-    grid-area: stock;
+#activity{
+    grid-area: activity;
 }
+
+#weather{
+    grid-area: weather;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+#icon{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#insult{
+    grid-area: insult;
+}
+
