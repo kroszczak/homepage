@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: grey;
+}
+
+
+#wrapper{
+    margin: 0 auto;
+    height: 80vh;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 5fr 5fr;
+    grid-gap: 20px;
+    grid-template-areas: 'google google google' 'msg gmail weather' 'msg gmail stock';
+}
+
+#wrapper{
+
+    div {
+        border: 1px black solid;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#gmail{
+    grid-area: gmail;
+}
+
+#msg{
+    grid-area: msg;
+}
+
+#weather{
+    grid-area: weather;
+}
+
+#google{
+    grid-area: google;
+}
+
+#stock{
+    grid-area: stock;
+}
