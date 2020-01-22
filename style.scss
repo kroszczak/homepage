@@ -1,25 +1,26 @@
+
 body {
+    font-family: 'Lato', sans-serif;
     padding: 0;
     margin: 0;
     background: grey;
+    color: 	white;
 }
 
 
 #wrapper{
-    margin: 0 auto;
+    margin: 5vh auto 0 auto;
     height: 80vh;
     width: 60vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 5fr 5fr;
     grid-gap: 20px;
-    grid-template-areas: 'google google google' 'activity weather insult';
+    grid-template-areas: 'google google google' 'social idk idk' 'activity weather idk2';
 }
 
 #wrapper{
-
     div {
-        border: 1px black solid;
         width: 100%;
         height: 100%;
     }
@@ -27,25 +28,113 @@ body {
 
 #google{
     grid-area: google;
+    justify-self: left;
+
+    img{
+        padding: 10px;
+        max-height: 100%;
+        width: auto
+    }
 }
 
 #activity{
+    display: flex;
+    min-height: 5fr;
+    overflow: hidden;
+    box-sizing: border-box;;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: center;
     grid-area: activity;
+    background-color: #1E90FF;
 }
 
 #weather{
+    background-color: inherit;
+    font-size: 1.6rem;
+    font-weight: 700;
     grid-area: weather;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    div{    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    img{
+        overflow: hidden;
+        width: auto;
+        height: auto;
+    }
+
+    #icon{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #date{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #temp_min{
+        font-size: 3rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+
+    #temp_max{
+        font-size: 3rem;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
 }
 
-#icon{
-    grid-column-start: 1;
-    grid-column-end: 3;
+
+
+#social{
+    grid-area: social;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .link{ 
+        display: flex;
+        margin: 0 auto;
+        
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 50%; height: auto;
+        }}
 }
 
-#insult{
-    grid-area: insult;
-}
 
+#google{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+input{
+    font-size: 1.05rem;
+    border: none;
+    height: 5vh;
+    width: 50vw;
+    border-radius: 50px;
+    padding-left: 30px;
+}
+}

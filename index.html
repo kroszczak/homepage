@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" 1rem = 62.5%>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Main Site gówno</title>
     
 </head>
 <body>
     <div id="wrapper">
-        <div id="google"></div>
+        <div id="google"><img src='images/googlelogo.png'/><input class='input' type="text" autofocus></div>
+        <div id="social">
+            <div class="link"></div>
+            <div class="link"></div>
+            <div class="link"></div>
+            <div class="link"></div>   
+        </div>
         <div id="activity"></div>
         <div id="weather">
-            <div id="icon">icon</div>
+            <div id="icon"><a href="x.png"></a></div>
             <div id="date">fate</div>
-            <div id="day">day</div>
-            <div id="temp_min">min</div>
-            <div id="temp_max">max</div>
+            <div id="temp_min"></div>
+            <div id="temp_max"></div>
         </div>
-        <div id="insult"></div>
     </div>
 
+    <script defer src='main.js'></script>
     <script defer src='api_key.js'></script>
     <script defer src='weather.js'></script>
-    <script defer src='boredapi.js'></script>
+    <script defer src='random.js'></script>
+    <script defer src='social.js'></script>
 </body>
 </html>
