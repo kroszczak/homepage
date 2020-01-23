@@ -4,7 +4,7 @@ const activity = async () => {
   const response = await api_call.json();
   
   console.log(response);
-  document.querySelector('#activity').innerHTML += `<p>${response.activity}</p>`;
+  document.querySelector('#activity').innerHTML= response.activity;
 }
 
 activity();

@@ -3,7 +3,7 @@ body {
     font-family: 'Lato', sans-serif;
     padding: 0;
     margin: 0;
-    background: grey;
+    background: rgb(54, 52, 52);
     color: 	white;
 }
 
@@ -38,15 +38,15 @@ body {
 }
 
 #activity{
-    display: flex;
+    align-content: center;
+    text-align: center;
     min-height: 5fr;
     overflow: hidden;
     box-sizing: border-box;;
     padding: 15px;
     font-size: 1.5rem;
-    text-align: center;
     grid-area: activity;
-    background-color: #1E90FF;
+    background-color: rgb(255, 30, 68);
 }
 
 #weather{
@@ -121,6 +121,10 @@ body {
         img{
             width: 50%; height: auto;
         }}
+}
+
+.link:hover{
+    opacity: 0.6;
 }
 
 
